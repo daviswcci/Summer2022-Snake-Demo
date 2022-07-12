@@ -1,0 +1,15 @@
+.heading{
+    font-family: sans-serif;
+}
+
+#grid{
+    display: grid;
+    
+}
+
+.grid-item{
+    border: 1px dashed;
+    border-color: lightcoral;
+    text-align: center;
+    font-size: small;
+}
