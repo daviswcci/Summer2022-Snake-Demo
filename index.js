@@ -4,6 +4,7 @@ let snakeDir = 1; // 0,1,2,3 ... N,S,E,W
 let snakeLen = 1;
 // NOTE: add a display text for our snake's direction
 let score = 0;
+let paused = false;
 
 let fruitPosn = {x: 5, y: 3} // fruitposn is an object with properties x and y
 
@@ -50,3 +51,31 @@ function RandomizeFruitPosn(){
     fruitPosn.x = Math.floor(Math.random() * gridWidth);
     fruitPosn.y = Math.floor(Math.random() * gridHeight);
 }
+
+function MoveSnake(){
+    if(paused){
+        return;
+    }
+}
+
+function ChangeDirection(event){
+    if(paused){
+        return;
+    }
+    switch(event.key){
+        case "w":
+            snakeDir = 0;
+            break;
+        case "a":
+            snakeDir = 3;
+            break;
+        case "s":
+            snakeDir = 1;
+            break;
+        case "d":
+            snakeDir = 2;
+            break;
+    }
+}
+
+document.addEventListener("keypress", ChangeDirection)
