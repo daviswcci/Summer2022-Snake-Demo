@@ -1,15 +1,30 @@
+@font-face {
+    font-family: Creepster;
+    src: url("Creepster-Regular.woff");
+}
+
 .heading{
-    font-family: sans-serif;
+    font-family: "Creepster", sans-serif;
+    color: whitesmoke;
 }
 
 #grid{
     display: grid;
-    
+    background-color: black;
 }
 
 .grid-item{
     border: 1px dashed;
-    border-color: lightcoral;
+    border-color: rgb(186, 186, 186);
     text-align: center;
     font-size: small;
+}
+
+p {
+    font-family: "Creepster", sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background-color: black;
 }
